@@ -1,66 +1,43 @@
- # 📋 Product Management Hub
+# Product AI Lab
 
-> A structured collection of PM frameworks, PRDs, roadmaps, competitive analyses, and user research templates.
+A practical product management portfolio exploring how AI-assisted workflows, SaaS metrics, and operational evidence support better product decisions.
 
----
+This repository is built around structured artifacts rather than opinion-led posts: product requirements, KPI trees, SQL analysis, prioritization records, workflow diagrams, and decision logs. The scenarios are simulated or anonymized and are intended to show analytical reasoning without presenting invented company outcomes.
 
-## 📁 Repository Structure
+## Focus Areas
 
+- AI-assisted product workflows with explicit human review and clear failure boundaries
+- B2B SaaS product analytics, including adoption, activation, and feedback signals
+- Product systems thinking across discovery, prioritization, instrumentation, and operating cadence
+- Lightweight technical artifacts that make product decisions testable and reviewable
+
+## Featured Case Studies
+
+| Case study | Product question | Artifacts |
+| --- | --- | --- |
+| [Feature Adoption Agent](case-studies/feature-adoption-agent/README.md) | How should a B2B product team identify meaningful adoption gaps after a workflow launch? | PRD, KPI tree, SQL, prioritization matrix, workflow, decision log |
+| [AI-Assisted Feedback Prioritization](case-studies/ai-assisted-feedback-prioritization/README.md) | How can scattered customer signals become auditable roadmap input without delegating judgment to AI? | PRD, KPI tree, SQL, prioritization matrix, workflow, decision log |
+
+## Repository Guide
+
+```text
+case-studies/              Simulated B2B product cases and supporting artifacts
+frameworks/                Reusable product operating approaches
+analytics/                 Metric definitions and analytical examples
+demos/                     Reserved for reviewed lightweight prototypes
+templates/                 Working formats for future artifacts
+automation/                Publishing and human-review policy
+archive/generated-drafts/  Preserved early AI-assisted content drafts
 ```
-product-management-hub/
-├── PRDs/                    # Product Requirements Documents
-│   └── template-prd.md
-├── roadmaps/               # Product roadmaps (Now/Next/Later)
-│   └── template-roadmap.md
-├── competitive-analysis/   # Competitor research & battlecards
-│   └── template-battlecard.md
-├── user-research/          # Interview scripts, personas, JTBD
-│   ├── template-interview.md
-│   └── template-persona.md
-├── metrics/                # KPIs, dashboards, OKRs
-│   └── template-okr.md
-└── experiments/            # Hypothesis logs and A/B test plans
-    └── template-experiment.md
-```
 
----
+## Working Standard
 
-## 🛠️ Templates Overview
+Every featured case must state its scenario type, assumptions, metrics, evidence limits, decision rationale, and trade-offs. Artifacts are designed to be reviewed in sequence: context, requirements, measures, analysis, prioritization, and decision.
 
-| Category | Template | Description |
-|---|---|---|
-| 📄 PRD | template-prd.md | Full product requirements document |
-| 🗺️ Roadmap | template-roadmap.md | Now / Next / Later format |
-| 🔍 Competitive | template-battlecard.md | Competitor battlecard |
-| 👤 User Research | template-interview.md | Customer interview (Mom Test) |
-| 🎯 OKRs | template-okr.md | Objectives & Key Results |
-| 🧪 Experiments | template-experiment.md | Hypothesis-driven experiment log |
+## AI Transparency
 
----
+AI tools may support research organization, outline development, draft SQL, and consistency review. Product framing, assumptions, prioritization choices, quality checks, and published narrative require human review. Automated drafts are not published directly to `main`.
 
-## 🧠 PM Frameworks Used
+## Status
 
-- **Jobs To Be Done (JTBD)** — understanding why users hire a product
-- **Now / Next / Later Roadmapping** — flexible, outcome-driven planning
-- **The Mom Test** — customer interview methodology
-- **RICE Scoring** — Reach, Impact, Confidence, Effort prioritization
-- **OKRs** — Objectives & Key Results goal-setting
-- **Opportunity Solution Trees** — structured discovery
-
----
-
-## 🔄 Weekly Update Process
-
-1. Review ongoing experiments and update findings
-2. Add new competitive intel if relevant
-3. Log new PRD drafts or roadmap changes
-4. Update metrics dashboards
-
----
-
-## 📬 Connect
-
-[![Twitter](https://img.shields.io/badge/@berketufenk-1DA1F2?style=flat&logo=twitter&logoColor=white)](https://twitter.com/berketufenk)
-[![LinkedIn](https://img.shields.io/badge/in%2Fberketufenk-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/berketufenk)
-
-*See also: [data-analytics-projects](https://github.com/berketufenk/data-analytics-projects) · [weekly-ideas-log](https://github.com/berketufenk/weekly-ideas-log)*lyses, and user research templates
+This repository is being developed as a portfolio foundation. The first two flagship cases use simulated B2B SaaS scenarios and synthetic analytical structures; they do not claim real customer results or employer outcomes.
