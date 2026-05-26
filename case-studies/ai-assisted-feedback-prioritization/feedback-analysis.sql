@@ -38,15 +38,18 @@ theme_evidence AS (
     INNER JOIN accounts a USING (account_id)
     GROUP BY t.theme_id, t.theme_name, t.strategic_pillar, a.segment
 ),
-ranked_for_review AS (
+theme_totals AS (
     SELECT
         *,
         SUM(affected_accounts) OVER (PARTITION BY theme_id) AS total_affected_accounts,
-        SUM(feedback_records) OVER (PARTITION BY theme_id) AS total_feedback_records,
-        DENSE_RANK() OVER (
-            ORDER BY SUM(affected_accounts) OVER (PARTITION BY theme_id) DESC
-        ) AS breadth_rank
+        SUM(feedback_records) OVER (PARTITION BY theme_id) AS total_feedback_records
     FROM theme_evidence
+),
+ranked_for_review AS (
+    SELECT
+        *,
+        DENSE_RANK() OVER (ORDER BY total_affected_accounts DESC) AS breadth_rank
+    FROM theme_totals
 )
 SELECT
     theme_name,
