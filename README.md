@@ -18,10 +18,17 @@ This repository is built around structured artifacts rather than opinion-led pos
 | [Feature Adoption Agent](case-studies/feature-adoption-agent/README.md) | How should a B2B product team identify meaningful adoption gaps after a workflow launch? | PRD, KPI tree, SQL, prioritization matrix, workflow, decision log |
 | [AI-Assisted Feedback Prioritization](case-studies/ai-assisted-feedback-prioritization/README.md) | How can scattered customer signals become auditable roadmap input without delegating judgment to AI? | PRD, KPI tree, SQL, prioritization matrix, workflow, decision log |
 
+## Practical Essays
+
+| Article | Focus |
+| --- | --- |
+| [Why Most AI Features Fail After Launch](articles/why-most-ai-features-fail-after-launch.md) | Why launch excitement is not adoption, and how trust, fallback behavior, and operational metrics shape durable value |
+
 ## Repository Guide
 
 ```text
 case-studies/              Simulated B2B product cases and supporting artifacts
+articles/                  Reviewed-style product analysis with lightweight artifacts
 frameworks/                Reusable product operating approaches
 analytics/                 Metric definitions and analytical examples
 demos/                     Reserved for reviewed lightweight prototypes
@@ -40,4 +47,4 @@ AI tools may support research organization, outline development, draft SQL, and 
 
 ## Status
 
-This repository is being developed as a portfolio foundation. The first two flagship cases use simulated B2B SaaS scenarios and synthetic analytical structures; they do not claim real customer results or employer outcomes.
+This repository is being developed as a portfolio foundation. The flagship cases use simulated B2B SaaS scenarios, and the supporting article uses an anonymized and simplified scenario with illustrative analytical structures; none claim real customer results or employer outcomes.
